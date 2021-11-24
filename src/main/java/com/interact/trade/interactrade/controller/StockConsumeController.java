@@ -28,7 +28,7 @@ public class StockConsumeController {
 		log.info(request.toString());
 	}
 	
-	@GetMapping(value="/get-data", produces = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping("/get-data")
 	public HashMap<String, String> checkGetData() {
 		HashMap<String, String> c = new HashMap();
 		c.put("test", "123456789");
