@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import java.util.*;
+
 
 @RestController
 @RequestMapping("/stock-market")
@@ -27,8 +29,10 @@ public class StockConsumeController {
 	}
 	
 	@GetMapping(value="/get-data", produces = MediaType.APPLICATION_JSON_VALUE)
-	public String checkGetData() {
-		return "Getting Data";
+	public HashMap<String, String> checkGetData() {
+		HashMap<String, String> c = new HashMap();
+		c.put("test", "123456789");
+		return c;
 	}
 
 }
