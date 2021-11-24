@@ -25,5 +25,10 @@ public class StockConsumeController {
 		log.info(queDto.toString());
 		log.info(request.toString());
 	}
+	
+	@GetMapping(value="/get-data", produces = MediaType.APPLICATION_JSON_VALUE)
+	public String checkGetData() {
+		return "Getting Data";
+	}
 
 }
