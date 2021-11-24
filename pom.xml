@@ -11,7 +11,8 @@
 	<groupId>com.interact.trade</groupId>
 	<artifactId>interactrade</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>
+	<!--<packaging>war</packaging>-->
 	<name>Interactrade</name>
 	<description>Interactive trade application</description>
 	<properties>
