@@ -23,7 +23,7 @@ public class StockConsumeController {
 	
 	private Logger log = LoggerFactory.getLogger(StockConsumeController.class);
 	
-	@PostMapping(value="/consume-data", consumes = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(value="/consume-data")
 	public void consumeSampleData(@RequestBody Object queDto, HttpServletRequest request){
 		log.info(queDto.toString());
 		log.info(request.toString());
