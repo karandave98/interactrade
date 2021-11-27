@@ -25,6 +25,7 @@ public class StockConsumeController {
 	
 	@PostMapping(value="/consume-data")
 	public void consumeSampleData(@RequestBody Object queDto, HttpServletRequest request){
+		log.info(new java.util.Date().toString());
 		log.info(queDto.toString());
 		log.info(request.toString());
 	}
@@ -33,6 +34,7 @@ public class StockConsumeController {
 	public HashMap<String, String> checkGetData() {
 		HashMap<String, String> c = new HashMap();
 		c.put("test", "123456789");
+		log.info(new java.util.Date().toString());
 		return c;
 	}
 
